@@ -6,6 +6,7 @@ import conmongo
 import sys
 import json
 from json import *
+import urllib
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
@@ -25,7 +26,7 @@ class index:
     def POST(self, name):
         i = web.data()
         topic = i.split('=')[1]
-        data=''
+        topic = urllib.unquote(topic)
         # 获取公司数据
         res,info, issues, enter = getBaseInfo(topic)
         return render.graph(name, topic,res,issues,enter)
@@ -37,6 +38,7 @@ class graph:
 
     def POST(self):
         i = web.data()
+        i =urllib.unquote(i)
         print i
         topic = i.split('=')[1]
         type =i.split('=')[2]

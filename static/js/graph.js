@@ -66,6 +66,8 @@ $(document).ready(function () {
             var now = new Date(base += oneDay);
             date.push([now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'));
             var key = getDateFormat(now);
+            if(key=="2015-02-17")
+                alert(json[key]);
             if(json[key]!=null) {
                 data.push(json[key]);
             }
