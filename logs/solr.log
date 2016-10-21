@@ -1,0 +1,223 @@
+2016-10-18 12:49:14.712 INFO  (localhost-startStop-1) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): ParallelWebappClassLoader
+  context: solr
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@13221655
+
+2016-10-18 12:49:14.727 INFO  (localhost-startStop-1) [   ] o.a.s.c.SolrResourceLoader Using JNDI solr.home: /Users/TPH/Documents/solr/home
+2016-10-18 12:49:14.728 INFO  (localhost-startStop-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/TPH/Documents/solr/home'
+2016-10-18 12:49:14.728 INFO  (localhost-startStop-1) [   ] o.a.s.c.SolrResourceLoader Using JNDI solr.home: /Users/TPH/Documents/solr/home
+2016-10-18 12:49:14.734 INFO  (localhost-startStop-1) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/TPH/Documents/solr/home/solr.xml
+2016-10-18 12:49:14.792 INFO  (localhost-startStop-1) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: /Users/TPH/Documents/solr/home
+2016-10-18 12:49:14.821 INFO  (localhost-startStop-1) [   ] o.a.s.c.CoreContainer New CoreContainer 992980977
+2016-10-18 12:49:14.821 INFO  (localhost-startStop-1) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/Users/TPH/Documents/solr/home]
+2016-10-18 12:49:14.822 WARN  (localhost-startStop-1) [   ] o.a.s.c.CoreContainer Couldn't add files from /Users/TPH/Documents/solr/home/lib to classpath: /Users/TPH/Documents/solr/home/lib
+2016-10-18 12:49:14.836 INFO  (localhost-startStop-1) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,connectionsEvictorSleepDelay : 5000,maxConnectionIdleTime : 40000,
+2016-10-18 12:49:15.022 INFO  (localhost-startStop-1) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-10-18 12:49:15.024 INFO  (localhost-startStop-1) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2016-10-18 12:49:15.025 INFO  (localhost-startStop-1) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2016-10-18 12:49:15.027 INFO  (localhost-startStop-1) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2016-10-18 12:49:15.027 INFO  (localhost-startStop-1) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2016-10-18 12:49:15.092 INFO  (localhost-startStop-1) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath /Users/TPH/Documents/solr/home
+2016-10-18 12:49:15.110 INFO  (localhost-startStop-1) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=core1, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data}
+2016-10-18 12:49:15.110 INFO  (localhost-startStop-1) [   ] o.a.s.c.CorePropertiesLocator Found core core1 in /Users/TPH/Documents/solr/home/core1
+2016-10-18 12:49:15.111 INFO  (localhost-startStop-1) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=core2, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data}
+2016-10-18 12:49:15.112 INFO  (localhost-startStop-1) [   ] o.a.s.c.CorePropertiesLocator Found core core2 in /Users/TPH/Documents/solr/home/core2
+2016-10-18 12:49:15.114 INFO  (localhost-startStop-1) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions
+2016-10-18 12:49:15.121 INFO  (localhost-startStop-1) [   ] o.a.s.s.SolrDispatchFilter user.dir=/Users/TPH/Downloads/serverdemo 2
+2016-10-18 12:49:15.122 INFO  (localhost-startStop-1) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2016-10-18 12:49:15.129 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/TPH/Documents/solr/home/core2'
+2016-10-18 12:49:15.129 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/TPH/Documents/solr/home/core1'
+2016-10-18 12:49:15.130 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Using JNDI solr.home: /Users/TPH/Documents/solr/home
+2016-10-18 12:49:15.130 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Using JNDI solr.home: /Users/TPH/Documents/solr/home
+2016-10-18 12:49:15.192 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-10-18 12:49:15.192 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-10-18 12:49:15.196 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-10-18 12:49:15.196 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-10-18 12:49:15.197 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Couldn't add files from /Users/TPH/Documents/solr/home/core2/../../../../contrib/extraction/lib filtered by .*\.jar to classpath: /Users/TPH/Documents/solr/home/core2/../../../../contrib/extraction/lib
+2016-10-18 12:49:15.197 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Couldn't add files from /Users/TPH/Documents/solr/home/core1/../../../../contrib/extraction/lib filtered by .*\.jar to classpath: /Users/TPH/Documents/solr/home/core1/../../../../contrib/extraction/lib
+2016-10-18 12:49:15.197 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Couldn't add files from /Users/TPH/Documents/solr/home/core2/../../../../dist filtered by solr-cell-\d.*\.jar to classpath: /Users/TPH/Documents/solr/home/core2/../../../../dist
+2016-10-18 12:49:15.198 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Couldn't add files from /Users/TPH/Documents/solr/home/core1/../../../../dist filtered by solr-cell-\d.*\.jar to classpath: /Users/TPH/Documents/solr/home/core1/../../../../dist
+2016-10-18 12:49:15.198 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Couldn't add files from /Users/TPH/Documents/solr/home/core2/../../../../contrib/clustering/lib filtered by .*\.jar to classpath: /Users/TPH/Documents/solr/home/core2/../../../../contrib/clustering/lib
+2016-10-18 12:49:15.198 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Couldn't add files from /Users/TPH/Documents/solr/home/core1/../../../../contrib/clustering/lib filtered by .*\.jar to classpath: /Users/TPH/Documents/solr/home/core1/../../../../contrib/clustering/lib
+2016-10-18 12:49:15.198 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Couldn't add files from /Users/TPH/Documents/solr/home/core2/../../../../dist filtered by solr-clustering-\d.*\.jar to classpath: /Users/TPH/Documents/solr/home/core2/../../../../dist
+2016-10-18 12:49:15.198 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Couldn't add files from /Users/TPH/Documents/solr/home/core1/../../../../dist filtered by solr-clustering-\d.*\.jar to classpath: /Users/TPH/Documents/solr/home/core1/../../../../dist
+2016-10-18 12:49:15.198 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Couldn't add files from /Users/TPH/Documents/solr/home/core2/../../../../contrib/langid/lib filtered by .*\.jar to classpath: /Users/TPH/Documents/solr/home/core2/../../../../contrib/langid/lib
+2016-10-18 12:49:15.198 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Couldn't add files from /Users/TPH/Documents/solr/home/core1/../../../../contrib/langid/lib filtered by .*\.jar to classpath: /Users/TPH/Documents/solr/home/core1/../../../../contrib/langid/lib
+2016-10-18 12:49:15.198 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Couldn't add files from /Users/TPH/Documents/solr/home/core2/../../../../dist filtered by solr-langid-\d.*\.jar to classpath: /Users/TPH/Documents/solr/home/core2/../../../../dist
+2016-10-18 12:49:15.198 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Couldn't add files from /Users/TPH/Documents/solr/home/core1/../../../../dist filtered by solr-langid-\d.*\.jar to classpath: /Users/TPH/Documents/solr/home/core1/../../../../dist
+2016-10-18 12:49:15.198 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Couldn't add files from /Users/TPH/Documents/solr/home/core2/../../../../contrib/velocity/lib filtered by .*\.jar to classpath: /Users/TPH/Documents/solr/home/core2/../../../../contrib/velocity/lib
+2016-10-18 12:49:15.199 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Couldn't add files from /Users/TPH/Documents/solr/home/core1/../../../../contrib/velocity/lib filtered by .*\.jar to classpath: /Users/TPH/Documents/solr/home/core1/../../../../contrib/velocity/lib
+2016-10-18 12:49:15.199 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Couldn't add files from /Users/TPH/Documents/solr/home/core2/../../../../dist filtered by solr-velocity-\d.*\.jar to classpath: /Users/TPH/Documents/solr/home/core2/../../../../dist
+2016-10-18 12:49:15.199 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Couldn't add files from /Users/TPH/Documents/solr/home/core1/../../../../dist filtered by solr-velocity-\d.*\.jar to classpath: /Users/TPH/Documents/solr/home/core1/../../../../dist
+2016-10-18 12:49:15.247 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.2.1
+2016-10-18 12:49:15.247 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.2.1
+2016-10-18 12:49:15.358 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-10-18 12:49:15.358 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-10-18 12:49:15.412 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [core2] Schema name=example-data-driven-schema
+2016-10-18 12:49:15.413 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [core1] Schema name=example-basic
+2016-10-18 12:49:15.746 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-10-18 12:49:15.746 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-10-18 12:49:15.921 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-10-18 12:49:15.928 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-10-18 12:49:15.940 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-10-18 12:49:15.943 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-10-18 12:49:15.971 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/Users/TPH/Documents/solr/home/core1'
+2016-10-18 12:49:15.971 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/Users/TPH/Documents/solr/home/core2'
+2016-10-18 12:49:15.972 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'core2' using configuration from instancedir /Users/TPH/Documents/solr/home/core2
+2016-10-18 12:49:15.972 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'core1' using configuration from instancedir /Users/TPH/Documents/solr/home/core1
+2016-10-18 12:49:16.009 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-10-18 12:49:16.010 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-10-18 12:49:16.024 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.SolrCore [[core1] ] Opening new SolrCore at [/Users/TPH/Documents/solr/home/core1], dataDir=[/Users/TPH/Documents/solr/home/core1/data/]
+2016-10-18 12:49:16.024 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.SolrCore [[core2] ] Opening new SolrCore at [/Users/TPH/Documents/solr/home/core2], dataDir=[/Users/TPH/Documents/solr/home/core2/data/]
+2016-10-18 12:49:16.026 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.JmxMonitoredMap JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@6a6824be
+2016-10-18 12:49:16.026 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.JmxMonitoredMap JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@6a6824be
+2016-10-18 12:49:16.052 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.SolrCore [[core2] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-10-18 12:49:16.052 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.SolrCore [[core2] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-10-18 12:49:16.053 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.SolrCore [[core1] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-10-18 12:49:16.053 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.SolrCore [[core1] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-10-18 12:49:16.068 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.CachingDirectoryFactory return new directory for /Users/TPH/Documents/solr/home/core2/data/snapshot_metadata
+2016-10-18 12:49:16.070 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.s.SolrSnapshotMetaDataManager Loading from snapshot metadata file...
+2016-10-18 12:49:16.068 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.CachingDirectoryFactory return new directory for /Users/TPH/Documents/solr/home/core1/data/snapshot_metadata
+2016-10-18 12:49:16.071 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.s.SolrSnapshotMetaDataManager Loading from snapshot metadata file...
+2016-10-18 12:49:16.077 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-10-18 12:49:16.077 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-10-18 12:49:16.139 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.CachingDirectoryFactory return new directory for /Users/TPH/Documents/solr/home/core1/data
+2016-10-18 12:49:16.139 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.CachingDirectoryFactory return new directory for /Users/TPH/Documents/solr/home/core2/data
+2016-10-18 12:49:16.140 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.SolrCore New index directory detected: old=null new=/Users/TPH/Documents/solr/home/core2/data/index/
+2016-10-18 12:49:16.140 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.SolrCore New index directory detected: old=null new=/Users/TPH/Documents/solr/home/core1/data/index/
+2016-10-18 12:49:16.141 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.CachingDirectoryFactory return new directory for /Users/TPH/Documents/solr/home/core1/data/index
+2016-10-18 12:49:16.141 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.CachingDirectoryFactory return new directory for /Users/TPH/Documents/solr/home/core2/data/index
+2016-10-18 12:49:16.158 INFO  (OldIndexDirectoryCleanupThreadForCore-core2) [   x:core2] o.a.s.c.SolrCore Looking for old index directories to cleanup for core core2 in /Users/TPH/Documents/solr/home/core2/data/
+2016-10-18 12:49:16.158 INFO  (OldIndexDirectoryCleanupThreadForCore-core1) [   x:core1] o.a.s.c.SolrCore Looking for old index directories to cleanup for core core1 in /Users/TPH/Documents/solr/home/core1/data/
+2016-10-18 12:49:16.160 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-10-18 12:49:16.161 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-10-18 12:49:16.164 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-10-18 12:49:16.166 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-10-18 12:49:16.307 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2016-10-18 12:49:16.307 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2016-10-18 12:49:16.373 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-10-18 12:49:16.373 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-10-18 12:49:16.394 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-10-18 12:49:16.395 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-10-18 12:49:16.398 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-10-18 12:49:16.399 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-10-18 12:49:16.400 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-10-18 12:49:16.400 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-10-18 12:49:16.401 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-10-18 12:49:16.401 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-10-18 12:49:16.492 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-10-18 12:49:16.492 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-10-18 12:49:16.493 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-10-18 12:49:16.493 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-10-18 12:49:16.494 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-10-18 12:49:16.493 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-10-18 12:49:16.494 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-10-18 12:49:16.494 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-10-18 12:49:16.496 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-10-18 12:49:16.496 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-10-18 12:49:16.496 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-10-18 12:49:16.496 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/sql,/graph,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/stream,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/terms,/debug/dump,/update/extract
+2016-10-18 12:49:16.496 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-10-18 12:49:16.496 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-10-18 12:49:16.496 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-10-18 12:49:16.496 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-10-18 12:49:16.496 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/sql,/graph,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/stream,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/terms,/debug/dump,/update/extract
+2016-10-18 12:49:16.496 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-10-18 12:49:16.507 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-10-18 12:49:16.507 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-10-18 12:49:16.507 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-10-18 12:49:16.507 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-10-18 12:49:16.530 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-10-18 12:49:16.530 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-10-18 12:49:16.530 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-10-18 12:49:16.531 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-10-18 12:49:16.600 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/TPH/Documents/solr/home/core1/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5fc6e72d; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_b,generation=11}
+2016-10-18 12:49:16.600 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/TPH/Documents/solr/home/core2/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5fc6e72d; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_6e,generation=230}
+2016-10-18 12:49:16.600 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.SolrDeletionPolicy newest commit generation = 11
+2016-10-18 12:49:16.601 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.SolrDeletionPolicy newest commit generation = 230
+2016-10-18 12:49:16.645 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.s.SolrIndexSearcher Opening [Searcher@799a2be5[core2] main]
+2016-10-18 12:49:16.645 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.s.SolrIndexSearcher Opening [Searcher@79debef6[core1] main]
+2016-10-18 12:49:16.652 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/TPH/Documents/solr/home/core2/conf
+2016-10-18 12:49:16.652 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/Users/TPH/Documents/solr/home/core2/conf}
+2016-10-18 12:49:16.653 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/TPH/Documents/solr/home/core1/conf
+2016-10-18 12:49:16.654 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/Users/TPH/Documents/solr/home/core1/conf}
+2016-10-18 12:49:16.662 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/Users/TPH/Documents/solr/home/core2/conf
+2016-10-18 12:49:16.662 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-10-18 12:49:16.662 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/Users/TPH/Documents/solr/home/core1/conf
+2016-10-18 12:49:16.662 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-10-18 12:49:16.671 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-10-18 12:49:16.671 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-10-18 12:49:16.678 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-10-18 12:49:16.678 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-10-18 12:49:16.679 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-10-18 12:49:16.680 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-10-18 12:49:16.683 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Users/TPH/Documents/solr/home/core1/conf/elevate.xml
+2016-10-18 12:49:16.683 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Users/TPH/Documents/solr/home/core2/conf/elevate.xml
+2016-10-18 12:49:16.694 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-10-18 12:49:16.695 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-10-18 12:49:16.712 INFO  (searcherExecutor-7-thread-1-processing-x:core2) [   x:core2] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@799a2be5[core2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2p(6.2.1):C2) Uninverting(_2q(6.2.1):C1)))}
+2016-10-18 12:49:16.712 INFO  (searcherExecutor-8-thread-1-processing-x:core1) [   x:core1] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@79debef6[core1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(6.2.1):C2/1:delGen=1) Uninverting(_3(6.2.1):C2/1:delGen=1) Uninverting(_4(6.2.1):C2/1:delGen=1) Uninverting(_6(6.2.1):C2)))}
+2016-10-18 12:49:16.712 INFO  (searcherExecutor-7-thread-1-processing-x:core2) [   x:core2] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-18 12:49:16.712 INFO  (searcherExecutor-8-thread-1-processing-x:core1) [   x:core1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-18 12:49:16.712 INFO  (searcherExecutor-7-thread-1-processing-x:core2) [   x:core2] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-10-18 12:49:16.712 INFO  (searcherExecutor-8-thread-1-processing-x:core1) [   x:core1] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-10-18 12:49:16.713 INFO  (searcherExecutor-8-thread-1-processing-x:core1) [   x:core1] o.a.s.c.SolrCore [core1] Registered new searcher Searcher@79debef6[core1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(6.2.1):C2/1:delGen=1) Uninverting(_3(6.2.1):C2/1:delGen=1) Uninverting(_4(6.2.1):C2/1:delGen=1) Uninverting(_6(6.2.1):C2)))}
+2016-10-18 12:49:16.714 INFO  (searcherExecutor-7-thread-1-processing-x:core2) [   x:core2] o.a.s.c.SolrCore [core2] Registered new searcher Searcher@799a2be5[core2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2p(6.2.1):C2) Uninverting(_2q(6.2.1):C1)))}
+2016-10-18 12:49:16.715 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-10-18 12:49:16.715 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-10-18 12:49:16.716 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-10-18 12:49:16.716 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-10-18 12:49:16.727 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.u.VersionInfo Found MAX value 1547879829827747840 from Terms for _version_ in index
+2016-10-18 12:49:16.728 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.u.VersionInfo Found MAX value 1547693123389358080 from Terms for _version_ in index
+2016-10-18 12:49:16.732 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.u.UpdateLog Took 16.0ms to seed version buckets with highest version 1547879829827747840
+2016-10-18 12:49:16.732 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.u.UpdateLog Took 16.0ms to seed version buckets with highest version 1547693123389358080
+2016-10-18 12:49:16.732 INFO  (coreLoadExecutor-6-thread-2) [   x:core2] o.a.s.c.CoreContainer registering core: core2
+2016-10-18 12:49:16.733 INFO  (coreLoadExecutor-6-thread-1) [   x:core1] o.a.s.c.CoreContainer registering core: core1
+2016-10-18 12:49:23.154 INFO  (http-nio-8080-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1476766162975} status=0 QTime=8
+2016-10-18 12:49:23.192 INFO  (http-nio-8080-exec-6) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1476766162976} status=0 QTime=46
+2016-10-18 12:49:23.219 INFO  (http-nio-8080-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1476766162976} status=0 QTime=18
+2016-10-18 12:49:25.148 INFO  (http-nio-8080-exec-1) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1476766162975} status=0 QTime=0
+2016-10-18 12:49:25.168 INFO  (http-nio-8080-exec-1) [   x:core2] o.a.s.c.S.Request [core2]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1476766165138} status=0 QTime=17
+2016-10-18 12:49:25.170 INFO  (http-nio-8080-exec-3) [   x:core2] o.a.s.c.S.Request [core2]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1476766162976&ts=1476766162976} status=503 QTime=13
+2016-10-18 12:49:25.170 INFO  (http-nio-8080-exec-2) [   x:core2] o.a.s.c.S.Request [core2]  webapp=/solr path=/replication params={wt=json&command=details&_=1476766165139} status=0 QTime=19
+2016-10-18 12:49:25.181 INFO  (http-nio-8080-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1476766162976} status=0 QTime=32
+2016-10-18 12:49:25.183 INFO  (http-nio-8080-exec-4) [   x:core2] o.a.s.c.S.Request [core2]  webapp=/solr path=/admin/system params={wt=json&_=1476766165138} status=0 QTime=28
+2016-10-18 12:49:26.669 INFO  (http-nio-8080-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1476766162975} status=0 QTime=0
+2016-10-18 12:49:26.677 INFO  (http-nio-8080-exec-9) [   x:core2] o.a.s.c.S.Request [core2]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1476766165138} status=0 QTime=5
+2016-10-18 12:49:26.690 INFO  (http-nio-8080-exec-6) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1476766162976} status=0 QTime=18
+2016-10-18 12:50:13.455 INFO  (localhost-startStop-2) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=992980977
+2016-10-18 12:50:13.456 INFO  (coreCloseExecutor-17-thread-1) [   x:core2] o.a.s.c.SolrCore [core2]  CLOSING SolrCore org.apache.solr.core.SolrCore@6f5da5f0
+2016-10-18 12:50:13.456 INFO  (coreCloseExecutor-17-thread-2) [   x:core1] o.a.s.c.SolrCore [core1]  CLOSING SolrCore org.apache.solr.core.SolrCore@5dd7f44f
+2016-10-18 12:50:13.457 INFO  (coreCloseExecutor-17-thread-2) [   x:core1] o.a.s.u.DirectUpdateHandler2 closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=1174,transaction_logs_total_number=10}
+2016-10-18 12:50:13.457 INFO  (coreCloseExecutor-17-thread-1) [   x:core2] o.a.s.u.DirectUpdateHandler2 closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=1292,transaction_logs_total_number=10}
+2016-10-18 12:50:13.458 INFO  (coreCloseExecutor-17-thread-2) [   x:core1] o.a.s.u.SolrCoreState Closing SolrCoreState
+2016-10-18 12:50:13.458 INFO  (coreCloseExecutor-17-thread-1) [   x:core2] o.a.s.u.SolrCoreState Closing SolrCoreState
+2016-10-18 12:50:13.458 INFO  (coreCloseExecutor-17-thread-2) [   x:core1] o.a.s.u.DefaultSolrCoreState SolrCoreState ref count has reached 0 - closing IndexWriter
+2016-10-18 12:50:13.458 INFO  (coreCloseExecutor-17-thread-2) [   x:core1] o.a.s.u.DefaultSolrCoreState closing IndexWriter with IndexWriterCloser
+2016-10-18 12:50:13.458 INFO  (coreCloseExecutor-17-thread-1) [   x:core2] o.a.s.u.DefaultSolrCoreState SolrCoreState ref count has reached 0 - closing IndexWriter
+2016-10-18 12:50:13.458 INFO  (coreCloseExecutor-17-thread-1) [   x:core2] o.a.s.u.DefaultSolrCoreState closing IndexWriter with IndexWriterCloser
+2016-10-18 12:50:13.468 INFO  (coreCloseExecutor-17-thread-1) [   x:core2] o.a.s.c.SolrCore [core2] Closing main searcher on request.
+2016-10-18 12:50:13.468 INFO  (coreCloseExecutor-17-thread-2) [   x:core1] o.a.s.c.SolrCore [core1] Closing main searcher on request.
+2016-10-18 12:50:13.473 INFO  (coreCloseExecutor-17-thread-2) [   x:core1] o.a.s.c.CachingDirectoryFactory Closing NRTCachingDirectoryFactory - 3 directories currently being tracked
+2016-10-18 12:50:13.474 INFO  (coreCloseExecutor-17-thread-1) [   x:core2] o.a.s.c.CachingDirectoryFactory Closing NRTCachingDirectoryFactory - 3 directories currently being tracked
+2016-10-18 12:50:13.474 INFO  (coreCloseExecutor-17-thread-1) [   x:core2] o.a.s.c.CachingDirectoryFactory looking to close /Users/TPH/Documents/solr/home/core2/data/snapshot_metadata [CachedDir<<refCount=0;path=/Users/TPH/Documents/solr/home/core2/data/snapshot_metadata;done=false>>]
+2016-10-18 12:50:13.474 INFO  (coreCloseExecutor-17-thread-2) [   x:core1] o.a.s.c.CachingDirectoryFactory looking to close /Users/TPH/Documents/solr/home/core1/data [CachedDir<<refCount=0;path=/Users/TPH/Documents/solr/home/core1/data;done=false>>]
+2016-10-18 12:50:13.474 INFO  (coreCloseExecutor-17-thread-1) [   x:core2] o.a.s.c.CachingDirectoryFactory Closing directory, CoreContainer#isShutdown=true
+2016-10-18 12:50:13.474 INFO  (coreCloseExecutor-17-thread-2) [   x:core1] o.a.s.c.CachingDirectoryFactory Closing directory, CoreContainer#isShutdown=true
+2016-10-18 12:50:13.474 INFO  (coreCloseExecutor-17-thread-1) [   x:core2] o.a.s.c.CachingDirectoryFactory Closing directory: /Users/TPH/Documents/solr/home/core2/data/snapshot_metadata
+2016-10-18 12:50:13.474 INFO  (coreCloseExecutor-17-thread-2) [   x:core1] o.a.s.c.CachingDirectoryFactory Closing directory: /Users/TPH/Documents/solr/home/core1/data
+2016-10-18 12:50:13.474 INFO  (coreCloseExecutor-17-thread-2) [   x:core1] o.a.s.c.CachingDirectoryFactory looking to close /Users/TPH/Documents/solr/home/core1/data/snapshot_metadata [CachedDir<<refCount=0;path=/Users/TPH/Documents/solr/home/core1/data/snapshot_metadata;done=false>>]
+2016-10-18 12:50:13.474 INFO  (coreCloseExecutor-17-thread-1) [   x:core2] o.a.s.c.CachingDirectoryFactory looking to close /Users/TPH/Documents/solr/home/core2/data/index [CachedDir<<refCount=0;path=/Users/TPH/Documents/solr/home/core2/data/index;done=false>>]
+2016-10-18 12:50:13.475 INFO  (coreCloseExecutor-17-thread-2) [   x:core1] o.a.s.c.CachingDirectoryFactory Closing directory, CoreContainer#isShutdown=true
+2016-10-18 12:50:13.475 INFO  (coreCloseExecutor-17-thread-2) [   x:core1] o.a.s.c.CachingDirectoryFactory Closing directory: /Users/TPH/Documents/solr/home/core1/data/snapshot_metadata
+2016-10-18 12:50:13.475 INFO  (coreCloseExecutor-17-thread-1) [   x:core2] o.a.s.c.CachingDirectoryFactory Closing directory, CoreContainer#isShutdown=true
+2016-10-18 12:50:13.475 INFO  (coreCloseExecutor-17-thread-1) [   x:core2] o.a.s.c.CachingDirectoryFactory Closing directory: /Users/TPH/Documents/solr/home/core2/data/index
+2016-10-18 12:50:13.475 INFO  (coreCloseExecutor-17-thread-2) [   x:core1] o.a.s.c.CachingDirectoryFactory looking to close /Users/TPH/Documents/solr/home/core1/data/index [CachedDir<<refCount=0;path=/Users/TPH/Documents/solr/home/core1/data/index;done=false>>]
+2016-10-18 12:50:13.475 INFO  (coreCloseExecutor-17-thread-1) [   x:core2] o.a.s.c.CachingDirectoryFactory looking to close /Users/TPH/Documents/solr/home/core2/data [CachedDir<<refCount=0;path=/Users/TPH/Documents/solr/home/core2/data;done=false>>]
+2016-10-18 12:50:13.475 INFO  (coreCloseExecutor-17-thread-2) [   x:core1] o.a.s.c.CachingDirectoryFactory Closing directory, CoreContainer#isShutdown=true
+2016-10-18 12:50:13.475 INFO  (coreCloseExecutor-17-thread-2) [   x:core1] o.a.s.c.CachingDirectoryFactory Closing directory: /Users/TPH/Documents/solr/home/core1/data/index
+2016-10-18 12:50:13.475 INFO  (coreCloseExecutor-17-thread-1) [   x:core2] o.a.s.c.CachingDirectoryFactory Closing directory, CoreContainer#isShutdown=true
+2016-10-18 12:50:13.475 INFO  (coreCloseExecutor-17-thread-1) [   x:core2] o.a.s.c.CachingDirectoryFactory Closing directory: /Users/TPH/Documents/solr/home/core2/data

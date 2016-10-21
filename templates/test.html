@@ -1,0 +1,56 @@
+$def with (argu1,name,help,a1,a2)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./static/bootstrap.css">
+    <link rel="stylesheet" href="./static/test.css">
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="./static/jquery-3.0.0.min.js"></script>
+    <script src="./static/bootstrap.js"></script>
+</head>
+<body class="font_1">
+<div class="site-wrapper">
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">AIDA</h3>
+                    <nav class="nav nav-masthead">
+                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="#">Help</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="inner cover">
+                <h1 class="cover-heading">Search</h1>
+                <p class="lead">Search for stock codes, stock names or key words.</p>
+                <div class="">
+                    <form class="form-inline" method="POST" >
+                        <!--<div class="form-group">-->
+                            <!--<input type="password" class="form-control" id="inputPassword2" placeholder="Password">-->
+                            <!--<button type="submit" class="btn btn-primary">Confirm</button>-->
+                        <!--</div>-->
+                        <input type="text" class="form-control" placeholder="000001" name="query"/>
+                        <input type="submit" class="btn btn-secondary-outline" value="Search"/>
+                    </form>
+                </div>
+            </div>
+
+            <div class="mastfoot">
+                <div class="inner">
+                    <p>Organized by <a href="#">@AIDA</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
