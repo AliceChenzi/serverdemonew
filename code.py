@@ -28,9 +28,9 @@ class index:
         topic = i.split('=')[1]
         topic = urllib.unquote(topic)
         # 获取公司数据
-        res,info, issues, enter = getBaseInfo(topic)
-        return render.graph(name, topic,res,issues,enter)
-        # return render.graph(name, topic,  'info', 'issues', 'enter')
+        # info = getBaseInfo(topic)
+        # return render.graph(name, topic,info)
+        return render.graph(name, topic,  'info')
 
 class graph:
     def GET(self, name):
@@ -57,10 +57,10 @@ def getBaseInfo(name):
         processor = conmongo.process()
         rows = processor.queryData('test', data)
         res =''
-        info = ''
-        issues =''
-        price=''
-        enter=''
+        # info = ''
+        # issues =''
+        # price=''
+        # enter=''
         for row in rows:
             for key in row.keys():  # 遍历字典
                 # if key=='公司名称':
@@ -92,8 +92,8 @@ def getBaseInfo(name):
                 # if key!='form':
                 res += str(key) + ":" + str(row[key]) + "\n"
         # return render.fenlan(name, res,info,issues,enter)
-        return res,info,issues,enter
-
+        # return res,info,issues,enter
+        return res
 
 if __name__ == "__main__":
     app = web.application(urls, globals())

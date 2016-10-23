@@ -42,10 +42,9 @@ $(document).ready(function () {
     function getDateFormat(date){
         var month;
         var day;
-        if(date.getMonth().toString().length<2)
-            month='0'+date.getMonth().toString();
-        else
-            month=date.getMonth().toString();
+        month = (date.getMonth()+1).toString();
+        if(month.length<2)
+            month='0'+month;
         if(date.getDate().toString().length<2)
             day='0'+date.getDate().toString();
         else
@@ -66,8 +65,6 @@ $(document).ready(function () {
             var now = new Date(base += oneDay);
             date.push([now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'));
             var key = getDateFormat(now);
-            if(key=="2015-02-17")
-                alert(json[key]);
             if(json[key]!=null) {
                 data.push(json[key]);
             }
@@ -113,7 +110,8 @@ $(document).ready(function () {
             dataZoom: [{
                 type: 'inside',
                 start: 90,
-                end: 100
+                end: 100,
+                realtime:true
             }, {
                 start: 90,
                 end: 100,

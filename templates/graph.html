@@ -1,4 +1,4 @@
-$def with (name,topic,info,issues,enter)
+$def with (name,topic,info)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -125,12 +125,12 @@ $def with (name,topic,info,issues,enter)
                                                 <a class="nav-link active"
                                                    style="display:inline;height: 30px;font-size: 15px"
                                                    href="#">Essential Information</a>
-                                                <a class="nav-link" style="display:inline;height: 30px;font-size: 15px"
-                                                   href="#">Marketable Issues</a>
-                                                <a class="nav-link" style="display:inline;height: 30px;font-size: 15px"
-                                                   href="#">Pricing Forecast</a>
-                                                <a class="nav-link" style="display:inline;height: 30px;font-size: 15px"
-                                                   href="#">Affiliated Enterprise</a>
+                                                <!--<a class="nav-link" style="display:inline;height: 30px;font-size: 15px"-->
+                                                   <!--href="#">Marketable Issues</a>-->
+                                                <!--<a class="nav-link" style="display:inline;height: 30px;font-size: 15px"-->
+                                                   <!--href="#">Pricing Forecast</a>-->
+                                                <!--<a class="nav-link" style="display:inline;height: 30px;font-size: 15px"-->
+                                                   <!--href="#">Affiliated Enterprise</a>-->
 
                                             </nav>
                                         </div>
@@ -145,30 +145,7 @@ $def with (name,topic,info,issues,enter)
                                                     </p>
                                                 </div>
                                             </li>
-                                            <li>
-                                                <div class="tab-content">
-                                                    $for line in issues.split('\n'):
-                                                    <p class="lead stock_content">
-                                                        $line.strip()
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="tab-content">
-                                                    <p class="lead stock_content">
-                                                        暂无数据。
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="tab-content">
 
-                                                    $for line in enter.split('\n'):
-                                                    <p class="lead stock_content">
-                                                        $line.strip()
-                                                    </p>
-                                                </div>
-                                            </li>
                                         </ul>
 
                                     </div>
