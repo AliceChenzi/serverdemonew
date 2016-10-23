@@ -28,9 +28,9 @@ class index:
         topic = i.split('=')[1]
         topic = urllib.unquote(topic)
         # 获取公司数据
-        # info = getBaseInfo(topic)
-        # return render.graph(name, topic,info)
-        return render.graph(name, topic,  'info')
+        info = getBaseInfo(topic)
+        return render.graph(name, topic,info)
+        # return render.graph(name, topic,  'info')
 
 class graph:
     def GET(self, name):
