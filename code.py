@@ -5,6 +5,7 @@ import web
 import conmongo
 import sys
 import json
+import re
 from json import *
 import urllib
 reload(sys)
@@ -53,46 +54,14 @@ class graph:
         return data1
 
 def getBaseInfo(name):
-        data = {"A股代码": name}
+        data = {"$or":[{"公司名称": {'$regex': name}},{"A股代码":name}]}
         processor = conmongo.process()
-        rows = processor.queryData('test', data)
+        rows = processor.queryData(data)
         res =''
-        # info = ''
-        # issues =''
-        # price=''
-        # enter=''
         for row in rows:
             for key in row.keys():  # 遍历字典
-                # if key=='公司名称':
-                #     info += '公司名称' + ":" + str(row[key]) + "\n"
-                # if key == '英文名称':
-                #     info += '英文名称' + ":" + str(row[key]) + "\n"
-                # if key == '证券简称':
-                #     info += '证券简称' + ":" + str(row[key]) + "\n"
-                # if key == '证券代码':
-                #     info += '证券代码' + ":" + str(row[key]) + "\n"
-                # if key == '行业类别':
-                #     info += '行业类别' + ":" + str(row[key]) + "\n"
-                # if key == '上市时间':
-                #     issues += '上市时间' + ":" + str(row[key]) + "\n"
-                # if key == '每股面值(元)':
-                #     issues += '每股面值(元)' + ":" + str(row[key]) + "\n"
-                # if key == '发行总市值(万元)':
-                #     issues += '发行总市值(万元)' + ":" + str(row[key]) + "\n"
-                # if key == '主承销商':
-                #     issues += '主承销商' + ":" + str(row[key]) + "\n"
-                # if key == '保荐人':
-                #     issues += '保荐人' + ":" + str(row[key]) + "\n"
-                # if key=='form':
-                #     formrows=row[key]
-                #     for formrow in formrows:
-                #         for formkey in formrow.keys():
-                #             enter += str(formkey) + ":" +str(formrow[formkey])+"\n"
-                #         enter +="-------------------------------------------------\n"
-                # if key!='form':
                 res += str(key) + ":" + str(row[key]) + "\n"
-        # return render.fenlan(name, res,info,issues,enter)
-        # return res,info,issues,enter
+
         return res
 
 if __name__ == "__main__":

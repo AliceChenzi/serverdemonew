@@ -47,7 +47,7 @@ class process:
         # self.db.name.remove({'name': 'steven1'})
         self.db.name.remove(data)
 
-    def queryData(self,name,data):
+    def queryData(self,data):
         # 查询全部数据
         rows = self.db.company.find(data)
         # self.printResult(rows)
