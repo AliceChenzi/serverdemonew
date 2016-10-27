@@ -61,6 +61,7 @@ def getBaseInfo(name):
         for row in rows:
             for key in row.keys():  # 遍历字典
                 res += str(key) + ":" + str(row[key]) + "\n"
+            res +="----------------------------------------------------------------------------------\n"
 
         return res
 

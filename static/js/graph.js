@@ -132,7 +132,7 @@ $(document).ready(function () {
                     type: 'line',
                     smooth: true,
                     symbol: 'none',
-                    sampling: 'average',
+                    // sampling: 'average',
                     itemStyle: {
                         normal: {
                             color: 'rgb(255, 70, 131)'

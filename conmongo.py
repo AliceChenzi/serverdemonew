@@ -44,19 +44,13 @@ class process:
         self.db.name.update(data[0],data[1], False, False)
 
     def deleteData(self,name,data):
-        # self.db.name.remove({'name': 'steven1'})
         self.db.name.remove(data)
 
     def queryData(self,data):
         # 查询全部数据
         rows = self.db.company.find(data)
-        # self.printResult(rows)
         return rows
         # 查询一个数据
-        # print db.lifeba.find_one()
-        # 带条件查询
-        # printResult(db.lifeba.find({'name': 'steven2'}))
-        # printResult(db.lifeba.find({'name': {'$gt': 25}}))
 
     def printResult(self,rows):
         for row in rows:
